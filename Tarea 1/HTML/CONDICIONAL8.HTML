@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Envíos</title>
+    <body>
+    <div class="container">
+        <h1> Calculadora de Envíos</h1>
+         <div>
+            <input type="number" id="peso" placeholder="Peso en kg" step="0.1" max="5"><br>
+            
+            <select id="zona">
+                <option value="">Selecciona destino</option>
+                <option value="nacional">Nacional</option>
+                <option value="america">América</option>
+                <option value="europa">Europa</option>
+                <option value="asia">Asia</option>
+                <option value="oceania">Oceanía</option>
+            </select><br>
+            
+            <button onclick="calcular()">Calcular Costo</button>
+        </div>
+        
+        <div id="resultado"></div>
+    </div>
+    <script src="../JS/CONDICIONALES8.JS"></script>

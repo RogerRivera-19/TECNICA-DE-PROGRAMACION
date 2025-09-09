@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Crédito</title>
+    <body>
+    <div class="container">
+        <h1>💳 Calculadora de Límite de Crédito</h1>
+        
+        <div class="aumentos">
+        </div>
+         <div>
+            <select id="tipo">
+                <option value="">Selecciona tipo de tarjeta</option>
+                <option value="1">Tipo 1 (+25%)</option>
+                <option value="2">Tipo 2 (+35%)</option>
+                <option value="3">Tipo 3 (+40%)</option>
+                <option value="otro">Otro tipo (+50%)</option>
+            </select><br>
+            
+            <input type="number" id="limiteActual" placeholder="Límite actual ($)" step="0.01"><br>
+            
+            <button onclick="calcular()">Calcular Nuevo Límite</button>
+        </div>
+        
+        <div id="resultado"></div>
+    </div>
+    <script src="../JS/CONDICIONALES7.JS"></script>

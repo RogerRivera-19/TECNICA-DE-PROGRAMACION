@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos de Lápices - While</title>
+    <style>
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🖊️ Pedidos de Lápices - Ciclo While</h1>
+        
+        <div class="precios">
+            <strong>Precios:</strong><br>
+            • 1000 lápices o más: $0.85 cada uno<br>
+            • Menos de 1000: $0.90 cada uno
+        </div>
+        
+        <!-- Paso 1: Cantidad de pedidos -->
+        <div id="ingresoCantidad">
+            <input type="number" id="cantidadPedidos" placeholder="¿Cuántos pedidos?" min="1">
+            <br>
+            <button onclick="iniciar()">Iniciar Procesamiento</button>
+        </div>
+        
+        <!-- Paso 2: Ingresar cada pedido -->
+        <div id="ingresoPedido">
+            <div class="estado" id="estado"></div>
+            <input type="number" id="cantidad" placeholder="Cantidad de lápices" min="1">
+            <br>
+            <button onclick="procesarPedido()">Procesar Pedido</button>
+        </div>
+        
+        <div id="resultado"></div>
+    </div>
+<script src="../JS/CICLO2.JS"></script>
+    <script>
+  
+    </script>
+</body>
+</html>

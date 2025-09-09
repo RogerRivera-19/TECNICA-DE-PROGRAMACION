@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Autobús - While</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>🚌 Viajes en Autobús - While</h1>
+        
+        <div class="info">
+            <strong>Tarifas:</strong><br>
+            Tipo A: $2.0/km/persona<br>
+            Tipo B: $2.5/km/persona<br>
+            Tipo C: $3.0/km/persona<br>
+            <em>Mínimo 20 personas</em>
+        </div>
+        
+        <div>
+            <input type="number" id="totalViajes" placeholder="¿Cuántos viajes?"><br>
+            <div class="estado" id="estado"></div>
+            
+            <select id="tipo" disabled>
+                <option value="">Tipo de autobús</option>
+                <option value="A">Tipo A</option>
+                <option value="B">Tipo B</option>
+                <option value="C">Tipo C</option>
+            </select><br>
+            
+            <input type="number" id="distancia" placeholder="Distancia (km)" disabled><br>
+            <input type="number" id="personas" placeholder="Cantidad personas" disabled><br>
+            
+            <button onclick="empezar()">Empezar</button>
+            <button onclick="calcular()" id="btnCalc" disabled>Calcular Viaje</button>
+        </div>
+        
+        <div id="resultado"></div>
+    </div>
+
+    <script src="../JS/CICLO4.JS"></script>
+</body>
+</html>
