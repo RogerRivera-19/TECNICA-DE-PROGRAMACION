@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios de Trajes con Descuentos</title>
+    </head>
+<body>
+    <div class="container">
+        <h1>👔 Calculadora de Precios de Trajes</h1>
+        
+        <div class="info">
+            <strong> Información de Descuentos:</strong><br>
+            • Trajes ≥ $2500: <strong>15% de descuento</strong><br>
+            • Trajes < $2500: <strong>8% de descuento</strong>
+        </div>
+        
+        <div class="input-section">
+            <label for="arregloInput"> Modifica el arreglo de precios de trajes:</label>
+            <input type="text" id="arregloInput" value="2800, 1500, 3200, 2200, 4500, 1800, 2600, 3500, 1200, 2900" 
+                   style="font-family: monospace;" />
+            <div style="font-size: 12px; color: #666; margin-top: 5px;">
+                 Separa los precios con comas. Ejemplo: 2800, 1500, 3200
+            </div>
+            <button onclick="calcularPrecios()">Calcular Precios Finales</button>
+            <button onclick="limpiar()" class="reset-btn">Limpiar Resultados</button>
+        </div>
+        
+        <div id="resultado"></div>
+    </div>
+</body>
+<script src="../JS/ARREGLO3.JS"></script>
+</html>

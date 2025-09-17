@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación de Edades en Arreglo</title>
+    </head>
+<body>
+    <div class="container">
+        <h1> Clasificación de Edades en Arreglo</h1>
+        
+        <div class="info-section">
+            <strong> Categorías de Edad:</strong>
+            <table class="categorias-table">
+                <tr>
+                    <th>Categoría</th>
+                    <th>Rango de Edad</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr><td>Infante</td><td>1-3 años</td><td>Primera infancia</td></tr>
+                <tr><td>Niño</td><td>4-13 años</td><td>Infancia</td></tr>
+                <tr><td>Adolescente</td><td>14-17 años</td><td>Adolescencia</td></tr>
+                <tr><td>Joven</td><td>18-35 años</td><td>Juventud</td></tr>
+                <tr><td>Adulto</td><td>36-64 años</td><td>Adultez</td></tr>
+                <tr><td>Adulto Mayor</td><td>65-120 años</td><td>Tercera edad</td></tr>
+            </table>
+            <small><strong>Rango válido:</strong> 1-120 años</small>
+        </div>
+        
+        <div class="input-section">
+            <h3> Arreglo de Edades</h3>
+            <div id="arregloEdades" class="arreglo-display">
+                <strong> ARREGLO DE EDADES:</strong><br>
+                edades = []<br>
+                <em>(Vacío - Ingresa edades separadas por comas)</em>
+            </div>
+            
+            <label for="edades"> Ingresa las edades separadas por comas:</label>
+            <input type="text" id="edades" placeholder="Ejemplo: 5, 28, 67, 15, 3, 45, 72, 12, 34, 58" />
+            <div style="font-size: 12px; color: #666; margin-top: 5px;">
+                 Ejemplo: 5,28,67,15 = Persona1(5 años), Persona2(28 años), etc.
+            </div>
+            
+            <button onclick="clasificarEdades()"> Clasificar por Edades</button>
+            <button onclick="limpiarTodo()" class="btn-secondary"> Limpiar Todo</button>
+        </div>
+        
+        <div id="resultado"></div>
+    </div>
+     <script src="../JS/ARREGLO9.JS"></script>
+    </body>
+</html>

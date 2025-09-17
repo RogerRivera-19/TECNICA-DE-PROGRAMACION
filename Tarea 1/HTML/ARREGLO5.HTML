@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas Médicas en Arreglo</title>
+    </head>
+<body>
+    <div class="container">
+        <h1> Citas Médicas en Arreglo</h1>
+        
+        <div class="info-section">
+            <strong> Tarifas por Número de Cita:</strong><br>
+            • Citas 1-3: <strong>$200</strong> cada una<br>
+            • Citas 4-5: <strong>$150</strong> cada una<br>
+            • Citas 6-8: <strong>$100</strong> cada una<br>
+            • Citas 9+: <strong>$50</strong> cada una
+        </div>
+        
+        <div class="input-section">
+            <h3> Arreglo de Números de Cita</h3>
+            <div id="arregloCitas" class="arreglo-display">
+                <strong> ARREGLO DE CITAS:</strong><br>
+                numerosCita = []<br>
+                <em>(Vacío - Ingresa números de cita separados por comas)</em>
+            </div>
+            
+            <label for="citas"> Ingresa los números de cita separados por comas:</label>
+            <input type="text" id="citas" placeholder="Ejemplo: 1, 3, 7, 2, 9, 4, 12" />
+            <div style="font-size: 12px; color: #666; margin-top: 5px;">
+                 Cada número representa la cita de un paciente. Ejemplo: 1,3,7 = Paciente1(cita1), Paciente2(cita3), Paciente3(cita7)
+            </div>
+            
+            <button onclick="procesarCitas()"> Procesar Todas las Citas</button>
+            <button onclick="limpiarTodo()" class="btn-secondary"> Limpiar Todo</button>
+        </div>
+        
+        <div id="resultado"></div>
+    </div>
+</body>
+ <script src="../JS/ARREGLO5.JS"></script>
+</html>

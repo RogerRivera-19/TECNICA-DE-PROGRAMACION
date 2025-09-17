@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación Simple con Arreglos</title>
+    </head>
+<body>
+    <div class="container">
+        <h1>🔢 Clasificador de Números con Arreglos</h1>
+        
+        <!-- Paso 1: Cantidad -->
+        <div id="paso1" class="paso">
+            <h3>Paso 1: ¿Cuántos números vas a clasificar?</h3>
+            <label for="cantidad">Cantidad de números:</label>
+            <input type="number" id="cantidad" min="1" max="20" value="5">
+            <button onclick="empezar()">Comenzar</button>
+        </div>
+        
+        <!-- Paso 2: Ingreso -->
+        <div id="paso2" class="paso hidden">
+            <h3 id="titulo">Paso 2: Ingresa los números</h3>
+            <div class="contador">
+                Número <span id="actual">1</span> de <span id="total">0</span>
+            </div>
+            <label for="numero">Ingresa el número:</label>
+            <input type="number" id="numero" step="any" placeholder="Ejemplo: -5, 0, 3.5">
+            <button onclick="agregarNumero()">Agregar</button>
+            <button onclick="clasificar()" class="btn-secondary">Clasificar Arreglo</button>
+        </div>
+        
+        <!-- Vista del Arreglo -->
+        <div id="arregloVista" class="arreglo-vista hidden">
+            <h4>📋 Arreglo actual:</h4>
+            <div id="numerosChips"></div>
+            <p>Tamaño del arreglo: <span id="tamaño">0</span></p>
+        </div>
+        
+        <!-- Resultados -->
+        <div id="resultados" class="hidden"></div>
+        
+        <button onclick="reiniciar()" class="btn-secondary">Reiniciar</button>
+    </div>
+    <script src="../JS/ARREGLO1.JS"></script>
+    </body>
+</html>

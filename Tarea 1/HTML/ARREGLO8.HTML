@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes de Paquetería en Arreglo</title>
+    </head>
+<body>
+    <div class="container">
+        <h1> Paquetes de Paquetería en Arreglo</h1>
+        
+        <div class="info-section">
+            <strong>Información de Zonas y Tarifas:</strong>
+            <table class="zonas-table">
+                <tr>
+                    <th>Zona</th>
+                    <th>Destino</th>
+                    <th>Tarifa por kg</th>
+                </tr>
+                <tr><td>1</td><td>Nacional</td><td>$30/kg</td></tr>
+                <tr><td>2</td><td>América</td><td>$50/kg</td></tr>
+                <tr><td>3</td><td>Europa</td><td>$60/kg</td></tr>
+                <tr><td>4</td><td>Asia</td><td>$70/kg</td></tr>
+                <tr><td>5</td><td>Oceanía</td><td>$80/kg</td></tr>
+            </table>
+            <small><strong>Restricción:</strong> Peso máximo 5 kg por paquete | <strong>Fórmula:</strong> Costo = Peso × Tarifa</small>
+        </div>
+        
+        <div class="input-section">
+            <h3> Arreglo de Paquetes (Tuplas: peso, zona)</h3>
+            <div id="arregloPaquetes" class="arreglo-display">
+                <strong>ARREGLO DE PAQUETES:</strong><br>
+                paquetes = []<br>
+                <em>(Vacío - Ingresa tuplas en formato: peso,zona)</em>
+            </div>
+            
+            <label for="paquetes"> Ingresa los paquetes como tuplas separadas por punto y coma:</label>
+            <input type="text" id="paquetes" placeholder="Ejemplo: 2.5,1; 4.8,3; 1.2,2; 5.0,5; 3.5,4" />
+            <div style="font-size: 12px; color: #666; margin-top: 5px;">
+                Formato: peso,zona; peso,zona; etc.<br>
+                Ejemplo: "2.5,1" = Paquete de 2.5 kg para zona 1 (Nacional)
+            </div>
+            
+            <button onclick="procesarPaquetes()"> Calcular Costos de Envío</button>
+            <button onclick="limpiarTodo()" class="btn-secondary">Limpiar Todo</button>
+        </div>
+        
+        <div id="resultado"></div>
+    </div>
+       <script src="../JS/ARREGLO8.JS"></script>
+       </body>
+</html>

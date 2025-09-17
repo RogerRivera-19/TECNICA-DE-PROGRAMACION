@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de Viajes en Arreglo</title>
+    </head>
+<body>
+    <div class="container">
+        <h1> Datos de Viajes en Arreglo</h1>
+        
+        <div class="info-section">
+            <strong> Información de Tarifas:</strong><br>
+            • Tipo A: $2.00 por km por persona<br>
+            • Tipo B: $2.50 por km por persona<br>
+            • Tipo C: $3.00 por km por persona<br>
+            • <strong>Mínimo de cobro:</strong> 20 personas (aunque viajen menos)
+        </div>
+        
+        <div class="input-section">
+            <h3> Arreglo de Viajes</h3>
+            <div id="arregloViajes" class="arreglo-display">
+                <strong> ARREGLO DE VIAJES:</strong><br>
+                viajes = []<br>
+                <em>(Vacío - Agrega viajes para llenarlo)</em>
+            </div>
+            
+            <h4> Agregar Nuevo Viaje:</h4>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
+                <div>
+                    <label for="tipo">Tipo de Autobús:</label>
+                    <select id="tipo">
+                        <option value="">Seleccionar...</option>
+                        <option value="A">Tipo A ($2.00/km)</option>
+                        <option value="B">Tipo B ($2.50/km)</option>
+                        <option value="C">Tipo C ($3.00/km)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="distancia">Distancia (km):</label>
+                    <input type="number" id="distancia" placeholder="Ej: 150" min="1" step="0.1">
+                </div>
+                <div>
+                    <label for="personas">Personas:</label>
+                    <input type="number" id="personas" placeholder="Ej: 25" min="1">
+                </div>
+            </div>
+            
+            <button onclick="agregarViaje()"> Agregar al Arreglo</button>
+            <button onclick="calcularTodos()" class="btn-success">Calcular Todos los Viajes</button>
+            <button onclick="limpiarTodo()" class="btn-secondary"> Limpiar Todo</button>
+        </div>
+        
+        <div id="resultado"></div>
+    </div>
+    </body>
+    <script src="../JS/ARREGLO4.JS"></script>
+</html>

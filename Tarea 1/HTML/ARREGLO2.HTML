@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costo de Pedidos de Lápices</title>
+    </head>
+<body>
+    <div class="container">
+        <h1> Calculadora de Costos de Lápices</h1>
+        
+        <div class="info">
+            <strong> Información:</strong><br>
+            • Precio normal: $0.90 por lápiz<br>
+            • Descuento: $0.85 por lápiz (pedidos ≥ 1000 lápices)
+        </div>
+        
+        <div class="input-section">
+            <label for="pedidos"> Ingresa las cantidades de lápices separadas por comas:</label>
+            <input type="text" id="pedidos" placeholder="Ejemplo: 500, 1200, 800, 2000" />
+            <button onclick="calcularCostos()">Calcular Costos</button>
+            <button onclick="limpiar()" class="reset-btn">Limpiar</button>
+        </div>
+        
+        <div id="resultado"></div>
+    </div>
+    </body>
+    <script src="../JS/ARREGLO2.JS"></script>
+</html>
